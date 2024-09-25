@@ -23,7 +23,7 @@ function setup() {
     line(435, 500, 490, 480 );
     line(375, 500, 320, 480 );
 
-    fill("lightgray");
+        fill("lightgray");
     triangle(250, 320, 300, 275, 260, 180);
     triangle(550, 320, 500, 275, 560, 180);
 
