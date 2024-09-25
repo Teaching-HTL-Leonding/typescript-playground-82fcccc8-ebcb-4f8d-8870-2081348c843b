@@ -9,6 +9,8 @@ function setup() {
     fill("black");
     circle(345, 390, 30);
     circle(455, 390, 30);
+      fill("HotPink");
+    triangle(385, 430, 425, 430, 405, 445);
 
   
 
