@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(400, 200);
+  createCanvas(400, 400);
   background("lightgray");
 
   // Define relative sizes and positions based on canvas width and height
