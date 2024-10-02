@@ -47,4 +47,3 @@ function setup() {
 
   // Add your code here
 }
-Ajdin — heute um 18:01 Uhr
