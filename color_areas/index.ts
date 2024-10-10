@@ -3,28 +3,35 @@ function setup() {
     background("black");
     noStroke();
 
+    fill("red");
+    rect(0, 0, width / 3);
 
+    fill("green");
+    rect(width / 3, 0, width / 3);
+
+    fill("yellow");
+    rect(width / 3 * 2, 0, width / 3);
 }
 
-// <<< Add the function `moveClicked` with the required code here
-{
+function mouseClicked() {
 
+    fill("black");
+    rect(0, 150, width, 50);
 
-    let ajdin: string;
-
+    fill("white");
+    let message: string;
     if (mouseX < width / 3) {
-        ajdin = "Yellow";
+        message = "red"
     } else if (mouseX < width / 3 * 2) {
-        
-        ajdin = "Green";
+        message = "green";
+
     } else {
-        
-        ajdin ="Red";
+        message = "yellow";
+
     }
+    textAlign(CENTER);
+    textSize(40);
+    text(message, 200, 180);
 
 
 }
-
-
-
-
