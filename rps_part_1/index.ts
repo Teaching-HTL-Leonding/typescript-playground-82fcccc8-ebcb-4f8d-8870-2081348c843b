@@ -19,9 +19,6 @@ function setup() {
     text("Human:", TEXT_LEFT, 50);
 
     // Display the icons for "stone", "paper", and "scissors".
-    text(`🪨` , STONE_LEFT, 100, 150);
-    text(`📃` , PAPER_LEFT, 100, 150);
-    text(`✂️` , SCISSORS_LEFT, 100, 150);
     textSize(75);
     // <<< Add your code here
 }
