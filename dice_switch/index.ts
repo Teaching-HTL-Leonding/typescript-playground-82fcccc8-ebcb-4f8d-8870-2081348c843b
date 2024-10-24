@@ -26,8 +26,30 @@ function setup() {
             // Draw three dots (combination of 1 and 2)
             circle(width / 4, height / 4, dicePointDiameter);
             circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
-             circle(width / 2, height / 2, dicePointDiameter);
+            circle(width / 2, height / 2, dicePointDiameter);
             break;
-        // <<< ... add the other cases here
+        case 4:
+            circle(width / 4, height / 4, dicePointDiameter);
+            circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+            circle(3 * width / 4, height / 4, dicePointDiameter);
+            circle(width / 4, 3 * height / 4, dicePointDiameter);
+            break;
+
+        case 5:
+            circle(width / 2, height / 2, dicePointDiameter);
+            circle(width / 4, height / 4, dicePointDiameter);
+            circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+            circle(3 * width / 4, height / 4, dicePointDiameter);
+            circle(width / 4, 3 * height / 4, dicePointDiameter);
+            break;
+
+            case 6:
+            circle(width / 4, height / 2, dicePointDiameter);
+            circle(3 * width / 4, height / 2, dicePointDiameter);
+            circle(width / 4, height / 4, dicePointDiameter);
+            circle(3 * width / 4, 3 * height / 4, dicePointDiameter);
+            circle(3 * width / 4, height / 4, dicePointDiameter);
+            circle(width / 4, 3 * height / 4, dicePointDiameter);
+            break;
     }
 }
