@@ -18,7 +18,11 @@ function setup() {
     textSize(30);
     text("Human:", TEXT_LEFT, 50);
 
-    // Display the icons for "stone", "paper", and "scissors".
+       textSize(75);
+    const HUMAN_SYMBOLS_TOP = 150;
+    text("🪨", STONE_LEFT, HUMAN_SYMBOLS_TOP);
+    text("📃", PAPER_LEFT, HUMAN_SYMBOLS_TOP);
+    text("✂️", SCISSORS_LEFT, HUMAN_SYMBOLS_TOP);
     textSize(75);
     // <<< Add your code here
 }
