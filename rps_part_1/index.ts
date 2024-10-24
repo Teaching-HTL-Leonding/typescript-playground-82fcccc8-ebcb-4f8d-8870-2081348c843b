@@ -18,15 +18,39 @@ function setup() {
     textSize(30);
     text("Human:", TEXT_LEFT, 50);
 
-       textSize(75);
+    // Display the icons for "stone", "paper", and "scissors".
+    textSize(75);
+    textSize(75);
     const HUMAN_SYMBOLS_TOP = 150;
     text("🪨", STONE_LEFT, HUMAN_SYMBOLS_TOP);
     text("📃", PAPER_LEFT, HUMAN_SYMBOLS_TOP);
     text("✂️", SCISSORS_LEFT, HUMAN_SYMBOLS_TOP);
-    textSize(75);
-    // <<< Add your code here
 }
 
 function mouseMoved() {
-    // <<< Add your code here
+    noFill();
+    strokeWeight(3);
+
+    const isInVertical = mouseY >= ICON_TOP && mouseY < ICON_TOP + ICON_HEIGHT;
+    if (isInVertical && mouseX >= STONE_LEFT && mouseX < STONE_LEFT + ICON_WIDTH) {
+        stroke("yellow"); // Highlight with yellow.
+    } else {
+        stroke("black"); // Remove highlight by drawing in black.
+    }
+
+    rect(STONE_LEFT, ICON_TOP, ICON_WIDTH, ICON_HEIGHT);
+
+    if (isInVertical && mouseX >= PAPER_LEFT && mouseX < PAPER_LEFT + ICON_WIDTH) {
+        stroke("yellow");
+    } else {
+        stroke("black");
+    }
+    rect(PAPER_LEFT, ICON_TOP, ICON_WIDTH, ICON_HEIGHT);
+
+    if (isInVertical && mouseX >= SCISSORS_LEFT && mouseX < SCISSORS_LEFT + ICON_WIDTH) {
+        stroke("yellow");
+    } else {
+        stroke("black");
+    }
+    rect(SCISSORS_LEFT, ICON_TOP, ICON_WIDTH, ICON_HEIGHT);
 }
