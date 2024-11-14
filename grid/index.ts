@@ -5,10 +5,10 @@ function setup() {
     const GRID = 25;
 
     createCanvas(SIZE, SIZE);
-    background("black");
+    background("grey");
 
     strokeWeight(0.25);
-    stroke("lightgray");
+    stroke("black");
 
     // Draw a grid by using a while loop.
     
@@ -17,7 +17,8 @@ function setup() {
     let i = GRID;            // STEP 1: Initialize the loop variable
     while (i < SIZE) {       // STEP 2: Check the loop condition
         line(i, 0, i, SIZE); // STEP 3: Do whatever you want to do repeatedly
-        i += GRID;           // STEP 4: Update the loop variable
+        i += GRID;        
+        line(SIZE, i, 0, i);   // STEP 4: Update the loop variable
     }
 
     // Part 2: Draw horizontal lines
