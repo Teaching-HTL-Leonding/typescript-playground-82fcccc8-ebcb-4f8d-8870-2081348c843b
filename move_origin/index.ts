@@ -3,10 +3,10 @@ function setup() {
   const CIRCLE_DIAMETER = 50;
 
   createCanvas(SIZE, SIZE);
-  background("black");
+  background("Purple");
 
   strokeWeight(3);
-  stroke("yellow");
+  stroke("Cyan");
   noFill();
 
   // Draw a circle at 0/0
