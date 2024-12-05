@@ -17,13 +17,13 @@ function mouseMoved() {
 
     noFill();
     stroke("aqua");
-let height1 = 0
-let height2 = 0
-for (let x = 0; x < 601; x++){
-    for (let i = 0; i < 50; i += 1) {
-        line()
+    let height1 = 0
+    let height2 = 0
+    for (let x = 0; x < 601; x++) {
+        for (let i = 0; i < 50; i += 1) {
+            line(601, 1100, 90, 0)
 
+        }
     }
-}
 
 }
